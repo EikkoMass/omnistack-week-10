@@ -1,0 +1,32 @@
+label#thumbnail {
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+}
+
+label#thumbnail input {
+  display: none;
+}
+
+label#thumbnail img {
+  width: 10%;
+  opacity: 50%;
+}
+
+label#thumbnail:hover > img {
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
+}
+
+label#thumbnail.has-thumbnail {
+  border: 0;
+}
+
+label#thumbnail.has-thumbnail img{
+  display: none;  
+}
